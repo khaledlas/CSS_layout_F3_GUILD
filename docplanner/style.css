@@ -1,0 +1,226 @@
+* {
+  margin: 0%;
+  padding: 0px;
+}
+
+/* header */
+.main-header {
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 268px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+  align-items: center;
+  padding: 2%;
+}
+
+.topnav {
+  /* justify-content: space-between; */
+  /* overflow: hidden; */
+}
+/* If the screen size is 559px wide or less, hide the element */
+@media screen and (max-width: 559px) {
+  .topnav {
+    display: none;
+  }
+}
+
+.topnav a {
+  font-weight: 400;
+  font-family: roboto;
+  color: #747474;
+  text-decoration: none;
+  padding: 0 0.6em;
+}
+
+.topnav a:hover {
+  background-color: none;
+  color: #00b39b;
+  cursor: pointer;
+}
+.topnav a.active {
+  background-color: none;
+  color: #00b39b;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* main */
+/* introduction part CSS */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 80%; */
+  margin: 2% 10%;
+}
+#introduction div {
+  display: flex;
+}
+
+#introduction h1 {
+  font-family: "Comforter Brush", cursive;
+  color: #00b39b;
+  font-size: 2.125rem;
+  margin: 2%;
+}
+#introduction div p {
+  /* line-height: 1.75; */
+  font-weight: 400;
+  color: gray;
+  line-height: 1.5;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  #introduction div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #introduction div p {
+    width: 300px;
+    /* color: red; */
+  }
+}
+/* --------------------------------------------- */
+/* Section services */
+
+#services {
+  /* width: 80%; */
+  margin: 2% 10%;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  padding: 1;
+}
+#margin-services {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 157px) {
+  #margin-services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+#margin-services-services {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#services .patients {
+  background: #00b39b;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+#services .doctors {
+  background: #3d83df;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+#services .clinics {
+  background: #1b2734;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+#services select {
+  text-decoration: underline;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+}
+/* ------------------------------------------- */
+/* countriues part CSS */
+#countries {
+  /* 1step : postions and alignements: using flexBox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* step 2: box model */
+  margin: 2% 10%;
+}
+.country {
+  margin-bottom: 2%;
+  border-radius: 2%;
+}
+.country img {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.country div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.country div {
+  padding: 4%;
+}
+.country div p {
+  color: gray;
+}
+.country div button {
+  color: white;
+  background-color: blue;
+  padding: 2%;
+}
+.country:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-top: 1px solid #eef2f2;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 12px;
+  color: #ababab;
+}
